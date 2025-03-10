@@ -1,0 +1,54 @@
+body {
+    background-color: pink; 
+    color: orange; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: pink;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+a {
+    color: pink;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+main {
+    text-align: left;
+    width: 80%;
+    margin: auto; 
+}
+
+ul, ol {
+    padding-left: 20px; 
+}
+
+.highlight {
+    font-weight: bold;
+    background-color: gray;
+}
