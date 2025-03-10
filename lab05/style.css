@@ -1,0 +1,25 @@
+
+body {
+    background-color: blue;
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+a {
+    color: yellow; 
+}
+
+a:hover {
+    color: orange; 
+}
+
+#main-heading {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.highlight {
+    font-weight: bold;
+    background-color: gray;
+} 
