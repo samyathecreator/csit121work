@@ -1,7 +1,14 @@
 body {
-    background-color: pink; 
-    color: orange; 
+    background-color: pink;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: orange;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-size: 32px;
 }
 
 header {
@@ -11,44 +18,81 @@ header {
     color: pink;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center; 
-    gap: 15px; 
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: pink;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section h2, section h3 {
+    margin-top: 0; 
+}
+
+ul, ol {
+    padding-left: 20px;
 }
 
 a {
     color: pink;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:hover {
-    color: orange;
     text-decoration: underline;
 }
 
-h1, h2, h3 {
-    font-size: 32px;
+footer {
+    background-color: orange;
+    padding: 10px;
     text-align: center;
+    color: pink;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-main {
-    text-align: left;
-    width: 80%;
-    margin: auto; 
-}
+@media (min-width: 768px) {
+    main {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
 
-ul, ol {
-    padding-left: 20px; 
-}
+    section {
+        width: 45%; 
+        margin-bottom: 20px;
+    }
 
-.highlight {
-    font-weight: bold;
-    background-color: gray;
+    footer {
+        position: static; 
+    }
 }
