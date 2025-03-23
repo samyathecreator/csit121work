@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm() {
+            let name = document.forms["contactForm"]["name"].value;
+            let email = document.forms["contactForm"]["email"].value;
+            let message = document.forms["contactForm"]["message"].value;
+            if (name == "" || email == "" || message == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            alert("Form submitted successfully!");http://127.0.0.1:3000/lab07/tierlist.html
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="tierlist.html">Tier List</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <h1>Contact Us</h1>
+
+    <form name="contactForm" onsubmit="return validateForm()" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <div>
+            <label for="favorite">Favorite Snack:</label>
+            <select id="favorite" name="favorite">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Chips">Chips</option>
+                <option value="Candy">Candy</option>
+                <option value="Pretzels">Pretzels</option>
+                <option value="Popcorn">Popcorn</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Do you like any snacks from the list?</label><br>
+            <input type="radio" id="yes" name="recommend" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommend" value="No">
+            <label for="no">No</label>
+        </div>
+
+        <div>
+            <label for="message">Is there any snacks that weren't on a list that you like:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required aria-required="true"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
+
