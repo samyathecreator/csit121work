@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <span class="menu-btn" onclick="openNav()">&#9776; Open Menu</span>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <span class="menu-btn" onclick="openNav()" aria-label="Open Menu">&#9776; Open Menu</span>
+
+    <div id="myNav" class="overlay" role="navigation" aria-label="Main Menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</a>
         <div class="overlay-content">
             <a href="index.html">Home</a>
             <a href="downtown_chicago.html">Downtown Chicago</a>
@@ -27,7 +28,7 @@
     </header>
 
     <main>
-        <img src="images/Chicago river walk.jpg" alt="Chicago River Walk">
+        <img src="images/Chicago.jpg" alt="Chicago River Walk">
         <p><strong>Description:</strong> The beautiful city lights encapsulating the city of Chicago.</p>
         <p><strong>Image Type:</strong> JPG</p>
         <p><strong>Why I Chose This Image:</strong> The image gives me a familiar sense of how I see Baltimore city/Inner Harbor. Regardless of what happens in or around the city, I only see the beauty, which tends to be the city lights.</p>
@@ -35,7 +36,9 @@
             <a href="https://www.pinterest.com/pin/3377768467541751/" target="_blank">Hey! Click Me :)</a>
         </p>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
+
+        
