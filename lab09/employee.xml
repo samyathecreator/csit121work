@@ -42,7 +42,7 @@
     </employee>
     <employee id="be134">
         <firstname>Vikash</firstname>
-        <lastname>kumar</lastname>
+        <lastname>Kumar</lastname>
         <title>COO</title>
         <division>Management</division>
         <building>216</building>
@@ -58,7 +58,7 @@
     </employee>
     <employee id="be136">
         <firstname>Abhinav</firstname>
-        <lastname>kumar</lastname>
+        <lastname>Kumar</lastname>
         <title>COO</title>
         <division>Management</division>
         <building>216</building>
