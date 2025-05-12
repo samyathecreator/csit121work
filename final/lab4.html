@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Labs 7 & 8 | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validateForm() {
+      let name = document.forms["contactForm"]["name"].value;
+      let email = document.forms["contactForm"]["email"].value;
+      let message = document.forms["contactForm"]["message"].value;
+      if (name === "" || email === "" || message === "") {
+        alert("All fields must be filled out");
+        return false;
+      }
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Labs 7 & 8: Forms, Tables, and Navigation</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="about.html">About Me</a>
+      <a href="reflection.html">Lessons Learned</a>
+    </nav>
+  </header>
+
+  <main class="flex-container">
+    <section>
+      <h2>Lab 7: Contact Form & Snack Tier List</h2>
+
+      <h3>Contact Form</h3>
+      <form name="contactForm" onsubmit="return validateForm()" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="favorite">Favorite Snack:</label>
+          <select id="favorite" name="favorite">
+            <option value="Chocolate">Chocolate</option>
+            <option value="Chips">Chips</option>
+            <option value="Candy">Candy</option>
+            <option value="Pretzels">Pretzels</option>
+            <option value="Popcorn">Popcorn</option>
+          </select>
+        </div>
+        <div>
+          <label>Do you like any snacks from the list?</label><br>
+          <input type="radio" id="yes" name="recommend" value="Yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="recommend" value="No">
+          <label for="no">No</label>
+        </div>
+        <div>
+          <label for="message">Other snacks you like:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+
+      <h3>Snack Tier List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Snack</th>
+            <th>Likeliness of Purchase</th>
+            <th>Frequency</th>
+            <th>Image</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S</td>
+            <td>Peanut M&M's</td>
+            <td>8/10</td>
+            <td>Very often</td>
+            <td><img src="image/peanut-mms.webp" alt="Peanut M&M's" width="100"></td>
+            <td>Go-to snack at any store or gas station.</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>Sweet BBQ Frito's</td>
+            <td>6/10</td>
+            <td>Sometimes</td>
+            <td><img src="image/frito-bbq.jpg" alt="Sweet BBQ Frito's" width="100"></td>
+            <td>Messy but delicious.</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>Beef Jerky</td>
+            <td>9/10</td>
+            <td>All the time</td>
+            <td><img src="image/slim-jim.webp" alt="Slim Jim" width="100"></td>
+            <td>Best with a pineapple Fanta.</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Honey Wheat Pretzels</td>
+            <td>4/10</td>
+            <td>Not often</td>
+            <td><img src="image/" alt="Honey Wheat Pretzels" width="100"></td>
+            <td>Tasty but not a frequent choice.</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>Candy</td>
+            <td>5/10</td>
+            <td>Rarely</td>
+            <td><img src="image/candy.webp" alt="Assorted candy" width="100"></td>
+            <td>I used to get candy all the time, but not as much now.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Lab 8: Responsive Navigation and Image Showcase</h2>
+      <p>This lab demonstrates a responsive navigation overlay and features three meaningful images with alt text and source links.</p>
+
+      <h3>Downtown Chicago</h3>
+      <img src="image/Chicago.jpg" alt="Chicago River Walk at night" width="400">
+      <p><strong>Why I Chose This:</strong> It reminds me of Baltimore’s Inner Harbor at night — calm, glowing, and full of life.</p>
+      <p><strong>Source:</strong> <a href="https://www.pinterest.com/pin/3377768467541751/" target="_blank">Pinterest</a></p>
+
+      <h3>Nature Trail</h3>
+      <img src="image/The_beauty_of_nature.webp" alt="Waterfall in nature" width="400">
+      <p><strong>Why I Chose This:</strong> Nature gives me peace. Looking at this makes me feel calm and grounded.</p>
+      <p><strong>Source:</strong> <a href="https://commons.wikimedia.org/wiki/File:The_beauty_of_nature.webp" target="_blank">Wikimedia Commons</a></p>
+
+      <h3>Car Ride Sunset</h3>
+      <img src="image/giphy.gif" alt="Beach sunset GIF" width="400">
+      <p><strong>Why I Chose This:</strong> I love capturing sunsets, especially on the road — they mark peaceful endings.</p>
+      <p><strong>Source:</strong> <a href="https://giphy.com/gifs/landscape-S67m7E7yH5Wta" target="_blank">GIPHY</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Samya's Portfolio</p>
+  </footer>
+</body>
+</html>
